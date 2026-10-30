@@ -1,0 +1,195 @@
+{
+  "@@locale": "en",
+  "appTitle": "Terrain GN",
+  "tabListings": "Land",
+  "tabMine": "My plots",
+  "tabAccount": "Account",
+  "allRegions": "All regions",
+  "verifiedBadge": "Verified",
+  "verifiedOn": "Verified on site by a field agent on {date}",
+  "@verifiedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pendingVerification": "Awaiting field verification",
+  "statusPending": "Pending verification",
+  "statusVerified": "Published",
+  "statusReserved": "Reserved",
+  "statusSold": "Sold",
+  "statusRejected": "Rejected",
+  "statusWithdrawn": "Withdrawn",
+  "emptyListings": "No verified plots here yet.",
+  "retry": "Retry",
+  "networkError": "No connection. Check your network and try again.",
+  "genericError": "Something went wrong ({code}).",
+  "@genericError": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "plotCode": "Plot ID",
+  "location": "Location",
+  "area": "Area",
+  "price": "Price",
+  "deposit": "Reservation deposit",
+  "openInMaps": "Open in Maps",
+  "contactSeller": "Contact the seller",
+  "whatsappSheetTitle": "Continue on WhatsApp",
+  "whatsappSheetBody": "WhatsApp will open with this summary ready to send to the seller.",
+  "connectWhatsapp": "Connect via WhatsApp",
+  "cancel": "Cancel",
+  "whatsappSafety": "Never send money outside an agent-verified reservation.",
+  "whatsappUnavailable": "Couldn't open WhatsApp.",
+  "signInTitle": "Sign in",
+  "signInToContinue": "Sign in to contact sellers and list your land.",
+  "phoneLabel": "Phone number",
+  "phoneInvalid": "Enter your number with the country code, e.g. +224…",
+  "sendCodeSms": "Get the code by SMS",
+  "sendCodeWhatsapp": "Get the code on WhatsApp",
+  "codeLabel": "6-digit code",
+  "codeSentTo": "Code sent to {phone}",
+  "@codeSentTo": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyCode": "Confirm",
+  "otpInvalid": "Wrong or expired code.",
+  "rateLimited": "Too many attempts. Wait a minute and try again.",
+  "signOut": "Sign out",
+  "language": "Language",
+  "myParcelsEmpty": "You haven't listed any land yet.",
+  "addParcel": "List a plot",
+  "submitTitle": "New plot",
+  "fieldTitle": "Listing title",
+  "fieldRegion": "Region",
+  "fieldPrefecture": "Prefecture",
+  "fieldLocality": "Neighbourhood or village",
+  "fieldPrice": "Price (GNF)",
+  "fieldTitleRef": "Title or permit number (optional)",
+  "required": "Required",
+  "boundaryTitle": "Boundary markers",
+  "boundaryHelp": "Stand at each boundary marker and add your position, or type the coordinates from your survey plan, in order around the plot.",
+  "addCornerGps": "Add my position",
+  "addCornerManual": "Type coordinates",
+  "cornerN": "Marker {n}",
+  "@cornerN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gpsAccuracy": "±{meters} m",
+  "@gpsAccuracy": {
+    "placeholders": {
+      "meters": {
+        "type": "int"
+      }
+    }
+  },
+  "coordinateSystem": "Coordinate system",
+  "latitude": "Latitude",
+  "longitude": "Longitude",
+  "easting": "X (easting)",
+  "northing": "Y (northing)",
+  "add": "Add",
+  "checkBoundary": "Check boundary",
+  "boundaryOk": "Valid boundary: {area} m², no competing claim.",
+  "@boundaryOk": {
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  },
+  "boundaryBlocked": "Overlaps plot {code} by {m2} m². This land is already claimed.",
+  "@boundaryBlocked": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "m2": {
+        "type": "String"
+      }
+    }
+  },
+  "boundarySoft": "Touches plot {code} by {m2} m². An agent will check it on site.",
+  "@boundarySoft": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "m2": {
+        "type": "String"
+      }
+    }
+  },
+  "problemInvalid": "The markers cross each other. Add them in order around the plot.",
+  "problemOutside": "This boundary is outside Guinea.",
+  "problemArea": "The area must be between 50 m² and 500 ha.",
+  "problemCorners": "Add between 3 and 200 markers.",
+  "duplicateTitleRef": "This title number is already used by another listing.",
+  "submit": "Submit for verification",
+  "submitted": "Submitted. A field agent will visit the plot before it is published.",
+  "addPhotos": "Add photos",
+  "addTitleDeed": "Photo of the title deed",
+  "uploading": "Uploading…",
+  "uploadedCount": "{count, plural, =0{No files uploaded yet} =1{1 file uploaded} other{{count} files uploaded}}",
+  "@uploadedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "done": "Done",
+  "locationDenied": "Allow location access to add your position.",
+  "withdraw": "Withdraw listing",
+  "rejectedReason": "Rejected: {reason}",
+  "@rejectedReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "parcelLocked": "This plot can no longer be changed.",
+  "reserve": "Reserve with a {amount} deposit",
+  "@reserve": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "reserveTitle": "Reserve this plot",
+  "reserveExplain": "Your deposit is collected by CinetPay and held until our team confirms the sale. The seller does not receive it directly.",
+  "payDeposit": "Pay the deposit by Mobile Money",
+  "openPayment": "Open the payment page",
+  "checkPayment": "I've paid, check again",
+  "reservationPending": "Waiting for your payment…",
+  "reservationHeld": "Deposit secured. The plot is reserved for you.",
+  "reservationFailed": "The payment did not go through. You can try again.",
+  "reservationExpired": "The payment window closed. You can start again.",
+  "reservationReview": "Payment received. Our team is checking it and will contact you.",
+  "reservationReleased": "Sale completed.",
+  "reservationRefunded": "Deposit refunded.",
+  "parcelNotAvailable": "This plot is no longer available to reserve.",
+  "paymentsUnavailable": "Payments are not available yet. Contact the seller on WhatsApp.",
+  "depositTooHigh": "This deposit is above the Mobile Money limit.",
+  "payoutWallet": "Payout wallet",
+  "payoutWalletHelp": "Where you receive a sale payment or a refund. A Guinean Orange Money or MTN number.",
+  "walletPending": "Awaiting agent confirmation",
+  "walletVerified": "Confirmed by an agent",
+  "walletInvalid": "Enter a Guinean number: +224 followed by 9 digits.",
+  "save": "Save",
+  "saved": "Saved"
+}

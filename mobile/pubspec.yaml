@@ -1,0 +1,29 @@
+name: terrain_gn
+description: "Terrain GN: verified land listings and escrow deposits for the Guinean diaspora."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_secure_storage: ^11.2.0
+  font_awesome_flutter: ^11.0.0
+  geolocator: ^14.1.2
+  http: ^1.6.0
+  image_picker: ^1.2.4
+  intl: ^0.20.3
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true

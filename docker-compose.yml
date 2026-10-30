@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_USER: terrain
+      POSTGRES_PASSWORD: terrain
+      POSTGRES_DB: terrain
+    ports:
+      - "127.0.0.1:${DB_PORT:-5435}:5432"
+    volumes:
+      - terrain-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U terrain"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  s3:
+    image: adobe/s3mock:5.1.0
+    environment:
+      COM_ADOBE_TESTING_S3MOCK_STORE_INITIAL_BUCKETS: terrain-docs
+      COM_ADOBE_TESTING_S3MOCK_STORE_REGION: us-east-1
+    ports:
+      - "127.0.0.1:${S3_PORT:-9190}:9090"
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://terrain:terrain@db:5432/terrain
+      NODE_ENV: development # production additionally requires Twilio and S3 credentials
+    ports:
+      - "127.0.0.1:${API_PORT:-4100}:4100"
+    depends_on:
+      db:
+        condition: service_healthy
+    profiles: [full]
+volumes:
+  terrain-db:
